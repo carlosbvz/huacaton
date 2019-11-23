@@ -1,0 +1,97 @@
+:root {
+    --color-white: #fff;
+    --color-light-gray: #f3f3f3; 
+    --color-light-blue: #11b6e0; 
+    --color-light-orange: #f48318; 
+    --color-light-purple: #cc3399; 
+    --color-light-green: #8ec642;
+    --color-light-red: #ef4323;
+    --circle-radio: 50px;
+    --border-width: 8px; 
+  }
+.center {
+    margin: 0 auto;
+}
+.container-relative {
+    position: relative;
+  }
+
+  /* Animation */
+  
+.loader-squares {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .square {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square-1 {
+    background-color: var(--color-light-green);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: square-1_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  
+  .square-2 {
+    background-color: var(--color-light-purple);
+    top: 0;
+    right: 0;
+    animation: square-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  
+  .square-3 {
+    background-color: var(--color-light-blue);
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    animation: square-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  
+  .square-4 {
+    background-color: var(--color-light-orange);
+    bottom: 0;
+    left: 0;
+    animation: square-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+  }
+  
+  @keyframes square-1_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, 50px)} 
+    50% {transform: translate(50px, 50px)} 
+    75% {transform: translate(50px, 0)} 
+  }
+  
+  @keyframes square-2_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(-50px, 0)} 
+    50% {transform: translate(-50px, 50px)} 
+    75% {transform: translate(0, 50px)} 
+  }
+  
+  @keyframes square-3_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, -50px)} 
+    50% {transform: translate(-50px, -50px)} 
+    75% {transform: translate(-50px, 0)} 
+  }
+  
+  @keyframes square-4_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(50px, 0)} 
+    50% {transform: translate(50px, -50px)} 
+    75% {transform: translate(0, -50px)} 
+  }
