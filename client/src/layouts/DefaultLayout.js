@@ -5,7 +5,9 @@ import Header from '../components/Header'
 
 const useStyles = makeStyles(theme => ({
     main: {
-      padding: '30px 0 0 0'
+      padding: '30px 0 0 0',
+      maxWidth: '500px',
+      margin: ' 0 auto'
     }
   }))
 
