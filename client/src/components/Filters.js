@@ -122,7 +122,7 @@ export default function Filters() {
                 </ListItem>
                 <Button onClick={uploadDocument} style={{ margin: '0px 20px'}} variant="contained" color="primary">Upload
                 <input
-                        style={{ margin: '0px 20px', width: '80%', height: '0px' }}
+                        style={{ margin: '0px 20px', width: '80%', height: '0px', visibility: 'hidden' }}
                         accept="image/*"
                         id="contained-button-file"
                         multiple
