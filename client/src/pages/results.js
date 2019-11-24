@@ -5,7 +5,7 @@ import Loading from '../components/Loading/Loading'
 import MockResultsList from '../components/MockResults'
 
 import Filters from '../components/Filters'
-
+import Feedback from '../components/feedback'
 
 
 
@@ -35,7 +35,7 @@ export default function Results() {
                     <p className='main-title'>Here we have some options for you</p>
                     <Filters />
                     <MockResultsList />
-                    
+                    <Feedback />
                 </>
             }
 
