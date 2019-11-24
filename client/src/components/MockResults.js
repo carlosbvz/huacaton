@@ -152,7 +152,7 @@ export default function MockResultsList() {
                 <Fade in={openModal}>
                   <div className={classes.paper}>
                     <h4 id="spring-modal-title">Tell us more about your self</h4>
-                    <p id="spring-modal-description"> - Tell us how you would like to contacted</p>
+                    <p id="spring-modal-description"> - Tell us how you would like to be contacted</p>
                     <p style={{ textAlign: 'center' }}>
                       <Fab color="secondary" aria-label="add">
                         <img src={mic} style={{ height: '30px' }} />
