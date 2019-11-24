@@ -2,14 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import DefaultLayout from '../layouts/DefaultLayout'
 import Loading from '../components/Loading/Loading'
-import MockResultsList from '../components/MockResults'
+import MockCompanyResults from '../components/MockCompanyResults'
+import JobFilters from '../components/JobFilters'
 
-import Filters from '../components/Filters'
-
-
-
-
-export default function Results() {
+export default function CompanyResults() {
 
     const [loading, setLoading] = useState(true)
 
@@ -33,8 +29,8 @@ export default function Results() {
                 :
                 <>
                     <p className='main-title'>Here we have some options for you</p>
-                    <Filters />
-                    <MockResultsList />
+                    <JobFilters />
+                    <MockCompanyResults />
                     
                 </>
             }
