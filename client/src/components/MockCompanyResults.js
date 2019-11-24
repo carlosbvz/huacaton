@@ -128,41 +128,41 @@ export default function MockCompanyResults() {
 
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItemText style={{width: '80%', margin: '0 auto'}}
-                primary="Prodigious"
-                secondary="We are looking for someone who can build amazing Web Apps using React. We'd love 5 years experience"
+          <ListItemText style={{ width: '80%', margin: '0 auto' }}
+            primary="Prodigious"
+            secondary="We are looking for someone who can build amazing Web Apps using React. We'd love 5 years experience"
           />
           <ListItem button className={classes.nested}>
             <ListItemIcon>
-              
+
               <Button onClick={handleOpen} style={{ margin: '20px 20px' }} variant="contained" color="primary">Get in Touch</Button>
 
-      <Modal
-        aria-labelledby="spring-modal-title"
-        aria-describedby="spring-modal-description"
-        className={classes.modal}
-        open={openModal}
-        onClose={handleClose}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={openModal}>
-          <div className={classes.paper}>
-            <h4 id="spring-modal-title">Tell us more about your self</h4>
-            <p id="spring-modal-description"> - Tell us how you would like to contacted</p>
-            <p style={{ textAlign: 'center' }}>
-              <Fab color="secondary" aria-label="add">
-                <img src={mic} style={{height: '30px'}} />
-              </Fab>
-              <p style={{ marginTop: '10px' }} className='small-text'>Press to Record</p>
-            </p>
-          </div>
-        </Fade>
-      </Modal>
-                
+              <Modal
+                aria-labelledby="spring-modal-title"
+                aria-describedby="spring-modal-description"
+                className={classes.modal}
+                open={openModal}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                  timeout: 500,
+                }}
+              >
+                <Fade in={openModal}>
+                  <div className={classes.paper}>
+                    <h4 id="spring-modal-title">Tell us more about your self</h4>
+                    <p id="spring-modal-description"> - Tell us how you would like to contacted</p>
+                    <p style={{ textAlign: 'center' }}>
+                      <Fab color="secondary" aria-label="add">
+                        <img src={mic} style={{ height: '30px' }} />
+                      </Fab>
+                      <p style={{ marginTop: '10px' }} className='small-text'>Press to Record</p>
+                    </p>
+                  </div>
+                </Fade>
+              </Modal>
+
             </ListItemIcon>
           </ListItem>
         </List>
